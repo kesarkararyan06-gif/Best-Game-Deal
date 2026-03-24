@@ -1,4 +1,4 @@
-# Best-Game-Deal
+# CheapShot
 
 A simple web app to find the cheapest prices for any PC game across multiple stores — built with plain HTML, CSS, and JavaScript.
 
@@ -49,7 +49,7 @@ https://www.cheapshark.com/redirect?dealID={cheapestDealID}
 ## Project Structure
 
 ```
-cheapshot/
+cheapShot/
 ├── index.html
 ├── style.css
 └── script.js
