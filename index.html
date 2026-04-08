@@ -1,27 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CheatShot - The Best Game Deal</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CheapShot</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <nav>
-        <h1>CheapShot</h1>
-    </nav>
- 
-    <section id="search-section">
-        <input type="text" id="searchInput" placeholder="Search a game..." />
-        <button id="searchBtn">Search</button>
-    </section>
- 
-    <section id="results-section">
-        <h2>Today's Hot Deals</h2>
-        <div id="results"></div>
-    </section>
- 
 
-    <script src="./script.js"></script>
+
+  <nav>
+    <h1>CheapShot</h1>
+    <button id="themeBtn">☾ Dark</button>
+  </nav>
+
+
+  <section id="search-section">
+    <input type="text" id="searchInput" placeholder="Search a game..." />
+    <button id="searchBtn">Search</button>
+  </section>
+
+
+  <section id="controls">
+    <select id="sortSelect">
+      <option value="">Sort By</option>
+      <option value="price-asc">Price: Low to High</option>
+      <option value="price-desc">Price: High to Low</option>
+      <option value="a-z">A → Z</option>
+      <option value="z-a">Z → A</option>
+    </select>
+
+    <label>
+      Max Price: <span id="priceValue">$50</span>
+      <input type="range" id="priceFilter" min="0" max="50" value="50" />
+    </label>
+  </section>
+
+
+  <section id="comparison" style="display:none;">
+  </section>
+
+
+  <section id="results-section">
+    <h2>Today's Hot Deals</h2>
+    <div id="results">
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
